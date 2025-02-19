@@ -1,20 +1,21 @@
 import React from 'react';
 import { Calendar, Bell, Settings, MessageCircle, Users, Briefcase, Clock, HelpCircle, House } from 'lucide-react';
-
+import image1 from "./hinhandanh.png";
+import image2 from "./logo.png";
 const Dashboard = () => {
   return (
     <div className="min-h-screen bg-green-50 flex items-center justify-center p-4">
       <div className="flex w-full max-w-4xl">
         {/* Left side with avatar placeholder */}
         <div className="hidden md:flex md:w-1/2 items-center justify-center">
-          <img src="/src/hinhandanh.png" alt="User Avatar" />
+          <img src={image1} alt="User Avatar" />
         </div>
 
         {/* Right side with login form */}
         <div className="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-sm">
           {/* Logo */}
           <div className="flex justify-center mb-6">
-            <img src="/src/logo.png" alt="Logo" className="w-40 h-40" />
+            <img src={image2} alt="Logo" className="w-40 h-40" />
           </div>
 
           {/* Job Finder text */}
